@@ -3,35 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML_Task3</title>
+    <title>HTML_Task4</title>
 </head>
 <body>
     <style>
-        div{
-            padding: 0;
-            border: 1px solid black;
-            background-color: gainsboro ;
-            width: 530px;
+        h3{
+            text-align: center
+        }
+        form{
             margin-left: auto;
-            margin-right: auto;
-            margin-top: auto;
-            margin-bottom: auto;
-            text-align: center;
+            padding: 10px;
+            margin: 10px;
         }
-        .div1{
-            text-align: left;
-            padding-left: 10px;
-        }
+        
     </style>
+    <h3><u>Making a simple registration form</u></h3><br>
+    
+    <form >
+        <!-- Inline elements/ non block elements -->
+        <label for="fullname">Full Name</label>
+        <input type="text" placeholder="Full Name" id="fullname" /><br> <br>
+        
+        <label for="username">User Name</label>
+        <input type="text" placeholder="User Name" id="username" /> <br> <br>
+        
+        
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password" /> <br> <br>
 
-    <div>
-    <p class="div1"> &nbsp; Click the following links</p>
-    <a href="https://en.wikipedia.org/wiki/Mountain" target="_blank">&nbsp;Opens in New  |</a>
-    <a href="https://en.wikipedia.org/wiki/Mountain" target="_self">Opens in Self  |</a>
-    <a href="https://en.wikipedia.org/wiki/Mountain" target="_parent">Opens in Parent  |</a>
-    <a href="https://en.wikipedia.org/wiki/Mountain" target="_top">Opens in Body  |</a>
-    <a href="https://en.wikipedia.org/wiki/Mountain" target="_blank">Send email</a>
-    <br>
-</div>
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" placeholder="Confirm Password" id="confirmPassword" /> <br> <br>
+        
+        <label for="address" >Address <br></label> 
+        <textarea id="address" name="address" rows="4" cols="50" >
+        </textarea>
+        <br><br>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" value="Age">
+        <br><br>
+
+        <label for="gender">Gender :</label>
+
+        <select id="gender">
+        <option value="male" selected>Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+        </select>
+        <br><br>
+        
+        <input type="submit" value="Save" />
+    </form>
 </body>
 </html>
